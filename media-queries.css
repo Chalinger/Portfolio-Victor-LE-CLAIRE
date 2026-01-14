@@ -1,0 +1,433 @@
+/* ============================================
+   MEDIA QUERIES - RESPONSIVE DESIGN
+   Mobile First Approach
+   ============================================ */
+
+/* ============================================
+   SMALL TABLETS - 481px et plus
+   ============================================ */
+@media (min-width: 481px) {
+
+    /* Hero - Boutons en ligne */
+    #hero_content #hero_content_infos #buttons {
+        flex-direction: row;
+        gap: var(--spacing-md);
+
+        a {
+            width: fit-content;
+            padding: var(--spacing-12) var(--spacing-lg);
+        }
+    }
+
+    /* Projets - Cartes plus larges */
+    #works #works_list .project-card {
+        max-width: 100%;
+    }
+
+    /* Contact - Formulaire plus large */
+    #contact #contact-main-container form {
+        max-width: 600px;
+    }
+}
+
+/* ============================================
+   TABLETS - 769px et plus
+   ============================================ */
+@media (min-width: 769px) {
+    :root {
+        /* Augmentation des tailles de police pour tablette */
+        --xxl-font-size: 2.5rem;
+        /* 40px */
+        --xxxl-font-size: 3.5rem;
+        /* 56px */
+    }
+
+    /* Main - Padding plus large */
+    main {
+        padding: 0 var(--spacing-xl);
+        gap: var(--spacing-3xl);
+    }
+
+    /* Navigation - Affichage des labels */
+    #fixed-scrolling #fixed_nav {
+        gap: var(--spacing-xl);
+
+        #menu-bar_main-links {
+            gap: var(--spacing-md);
+            padding: var(--spacing-sm);
+
+            a {
+                span {
+                    display: block;
+                }
+
+                &.active {
+                    padding: var(--spacing-sm) var(--spacing-lg);
+                }
+            }
+        }
+    }
+
+    /* Hero - Layout en deux colonnes */
+    #hero {
+        min-height: 90vh;
+    }
+
+    #hero_content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--spacing-3xl);
+
+        #hero_content_infos {
+            max-width: 50%;
+
+            #texts {
+                max-width: 100%;
+
+                h1 {
+                    font-size: 2.5rem;
+
+                    span {
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+
+            #buttons {
+                flex-direction: row;
+                gap: var(--spacing-md);
+
+                a:first-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        #hero_content_pfp {
+            max-width: 45%;
+        }
+    }
+
+    /* Projets - Cards en colonnes */
+    #works #works_list {
+        gap: var(--spacing-xl);
+
+        .project-card {
+            max-width: 100%;
+            padding: var(--spacing-lg);
+        }
+    }
+
+    /* About - Content en flex row */
+    #about #about-main #about_content {
+        flex-direction: row;
+        justify-content: space-between;
+
+        #about_content-text {
+            max-width: 50%;
+        }
+    }
+
+    /* About - Grid pour compétences */
+    #about #about_skills #about_skills_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+
+        .about_skills_card {
+            width: 100%;
+        }
+    }
+
+    /* About - Image plus petite */
+    #about #about-main #about_img-container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    /* Testimonials - Grid 2 colonnes */
+    #testimonials #testimonials_main-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+
+        .testimonials_card {
+            width: 100%;
+        }
+    }
+
+    /* Contact - Formulaire centré */
+    #contact #contact-main-container {
+        justify-content: center;
+
+        form {
+            max-width: 700px;
+        }
+    }
+}
+
+/* ============================================
+   DESKTOP - 1025px et plus
+   ============================================ */
+@media (min-width: 1025px) {
+    :root {
+        /* Augmentation des tailles de police pour desktop */
+        --xxl-font-size: 3rem;
+        /* 48px */
+        --xxxl-font-size: 4rem;
+        /* 64px */
+    }
+
+    /* Main - Padding encore plus large */
+    main {
+        padding: 0 var(--spacing-2xl);
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    /* Navigation - Position ajustée */
+    #fixed-scrolling #fixed_nav {
+        bottom: 5%;
+    }
+
+
+    /* Hero - Tailles optimisées */
+    #hero_content {
+        gap: var(--spacing-3xl);
+
+        #hero_content_infos {
+            #texts h1 {
+                font-size: 3rem;
+
+                span {
+                    font-size: 2rem;
+                }
+            }
+
+            #buttons {
+                gap: var(--spacing-lg);
+            }
+        }
+
+        #hero_content_pfp {
+            #pfp_container {
+                width: 24rem;
+            }
+
+            #pfp-background-spin {
+                width: 30rem;
+                height: 30rem;
+            }
+        }
+    }
+
+    /* About - Content - Text plus large */
+    #about #about-main #about_content #about_content-text p {
+        font-size: var(--lg-font-size);
+    }
+
+    #about #about-main #about_content #about_img-container {
+        width: 30rem;
+    }
+
+    /* About - Compétences en 4 colonnes */
+    #about #about_skills #about_skills_container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Projets - Layout optimisé */
+    #works #works_list .project-card {
+        gap: var(--spacing-xl);
+
+        .project-card-left {
+            gap: var(--spacing-lg);
+        }
+    }
+
+    /* Testimonials - 3 colonnes */
+    #testimonials #testimonials_main-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ============================================
+   LARGE DESKTOP - 1441px et plus
+   ============================================ */
+@media (min-width: 1441px) {
+    main {
+        max-width: 1600px;
+        padding: 0 var(--spacing-3xl);
+    }
+
+    /* Hero - Espacement maximal */
+    #hero_content {
+        #hero_content_pfp {
+            #pfp_container {
+                width: 28rem;
+            }
+
+            #pfp-background-spin {
+                width: 35rem;
+                height: 35rem;
+            }
+        }
+    }
+
+    /* Navigation - Taille augmentée */
+    #fixed-scrolling #fixed_nav {
+        #menu-bar_main-links {
+            padding: var(--spacing-sm);
+            gap: var(--spacing-lg);
+
+            a {
+                font-size: var(--md-font-size);
+
+                img {
+                    width: 1.75rem;
+                    height: 1.75rem;
+                }
+            }
+        }
+
+        #about-link {
+            padding: var(--spacing-md);
+
+            img {
+                width: 1.75rem;
+                height: 1.75rem;
+            }
+        }
+    }
+}
+
+/* ============================================
+   EXTRA LARGE DESKTOP - 1920px et plus
+   ============================================ */
+@media (min-width: 1920px) {
+    :root {
+        --xxxl-font-size: 5rem;
+        /* 80px */
+    }
+
+    main {
+        max-width: 1800px;
+    }
+
+    #hero_content {
+        #hero_content_infos #texts h1 {
+            font-size: 3.5rem;
+
+            span {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+/* ============================================
+   LANDSCAPE MODE - Mobiles en paysage
+   ============================================ */
+@media (max-height: 600px) and (orientation: landscape) {
+
+    /* Réduire la hauteur du hero */
+    #hero {
+        min-height: 100vh;
+    }
+
+    /* Navigation plus compacte */
+    #fixed-scrolling #fixed_nav {
+        bottom: 5%;
+    }
+
+    /* Réduire les espacements verticaux */
+    main {
+        gap: var(--spacing-xl);
+    }
+
+    section {
+        padding: var(--spacing-lg) 0;
+    }
+}
+
+/* ============================================
+   PRINT - Optimisation pour l'impression
+   ============================================ */
+@media print {
+
+    /* Cacher les éléments non nécessaires */
+    #fixed-scrolling,
+    #hero_background,
+    #pfp-background-spin,
+    #buttons,
+    #works_filter {
+        display: none !important;
+    }
+
+    /* Optimiser les couleurs pour l'impression */
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    /* Éviter les sauts de page */
+    section,
+    .project-card,
+    .about_skills_card,
+    .testimonials_card {
+        page-break-inside: avoid;
+    }
+
+    /* Afficher les URLs des liens */
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+
+/* ============================================
+   REDUCED MOTION - Accessibilité
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ============================================
+   DARK MODE - Support système
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+    /* Le design est déjà en dark mode par défaut */
+    /* Ces règles sont là pour référence future */
+}
+
+/* ============================================
+   HIGH CONTRAST - Accessibilité
+   ============================================ */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #FF8800;
+        --secondary-color: #CCCCCC;
+    }
+
+    *:focus-visible {
+        outline-width: 3px;
+    }
+
+    button,
+    a {
+        border-width: 2px;
+    }
+}

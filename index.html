@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Victor LE CLAIRE - Développeur Full Stack passionné, étudiant en développement multimédia à Paris.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <title>Victor LE CLAIRE - Développeur Full Stack</title>
+</head>
+
+<body>
+    <!-- Navigation fixe -->
+    <header id="fixed-scrolling" role="banner">
+        <nav id="fixed_nav" role="navigation" aria-label="Navigation principale">
+            <ul id="menu-bar_main-links" role="menubar">
+                <li role="none">
+                    <a href="#hero" class="active" role="menuitem" aria-current="page">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.5067 12.2389V7.50465C14.5067 7.04868 14.5063 6.82057 14.4509 6.6084C14.4018 6.42037 14.3211 6.24244 14.212 6.08164C14.0888 5.9002 13.9175 5.74974 13.5744 5.44948L9.47839 1.86548C8.84129 1.30801 8.52273 1.02942 8.16423 0.923397C7.84833 0.829978 7.51162 0.829978 7.19573 0.923397C6.83749 1.02934 6.5194 1.30767 5.88325 1.8643L1.78589 5.44948C1.44274 5.74974 1.27156 5.9002 1.14839 6.08164C1.03924 6.24244 0.957968 6.42037 0.908836 6.6084C0.853394 6.82057 0.853394 7.04868 0.853394 7.50465V12.2389C0.853394 13.0341 0.853394 13.4315 0.983306 13.7452C1.15652 14.1634 1.48855 14.496 1.90673 14.6692C2.22036 14.7991 2.61797 14.7991 3.41317 14.7991C4.20838 14.7991 4.60642 14.7991 4.92006 14.6692C5.33824 14.496 5.67018 14.1634 5.84339 13.7453C5.97331 13.4316 5.97339 13.034 5.97339 12.2388V11.3855C5.97339 10.4429 6.73749 9.67881 7.68006 9.67881C8.62263 9.67881 9.38673 10.4429 9.38673 11.3855V12.2388C9.38673 13.034 9.38673 13.4316 9.51664 13.7453C9.68986 14.1634 10.0219 14.496 10.4401 14.6692C10.7537 14.7991 11.1513 14.7991 11.9465 14.7991C12.7417 14.7991 13.1398 14.7991 13.4534 14.6692C13.8716 14.496 14.2035 14.1634 14.3767 13.7452C14.5066 13.4315 14.5067 13.0341 14.5067 12.2389Z"
+                                stroke="white" stroke-width="1.70667" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="#works" role="menuitem">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.4107 4.26667V2.21867C10.4107 1.46461 9.79947 0.853333 9.04539 0.853333H6.31473C5.56067 0.853333 4.94939 1.46461 4.94939 2.21867V4.26667M14.5067 7.68H0.853394M4.26677 7.68V9.04534M11.0934 7.68V9.04534M0.853394 5.63199C0.853394 4.87793 1.46467 4.26665 2.21873 4.26665H13.1414C13.8955 4.26665 14.5067 4.87793 14.5067 5.63199V13.1413C14.5067 13.8954 13.8955 14.5067 13.1414 14.5067H2.21873C1.46467 14.5067 0.853394 13.8954 0.853394 13.1413V5.63199Z"
+                                stroke="white" stroke-width="1.70667" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Projets</span>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="#about" role="menuitem">
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.5067 15.36C14.5067 13.1345 11.4503 11.3304 7.68006 11.3304C3.9098 11.3304 0.853394 13.1345 0.853394 15.36M7.68006 8.91259C5.32365 8.91259 3.41339 7.10847 3.41339 4.88296C3.41339 2.65746 5.32365 0.853333 7.68006 0.853333C10.0365 0.853333 11.9467 2.65746 11.9467 4.88296C11.9467 7.10847 10.0365 8.91259 7.68006 8.91259Z"
+                                stroke="white" stroke-width="1.70667" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>À propos</span>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="#testimonials" role="menuitem">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Avis</span>
+                    </a>
+                </li>
+            </ul>
+            <a href="#contact" id="about-link" aria-label="Aller à la section contact">
+                <img src="assets/img/contact-icon.svg" alt="" aria-hidden="true">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Hero -->
+        <section id="hero" aria-labelledby="hero-title">
+            <div id="hero_background" aria-hidden="true">
+                <div class="background-circle circle-1"></div>
+                <div class="background-circle circle-2"></div>
+            </div>
+            <div id="hero_content">
+                <div id="hero_content_infos">
+                    <div id="location-tag" aria-label="Localisation">
+                        <img src="assets/img/position-tag-icon.svg" alt="" aria-hidden="true">
+                        <p>Paris, FR</p>
+                    </div>
+                    <div id="texts">
+                        <h1 id="hero-title">
+                            Bonjour, je suis Victor.
+                            <span>Aussi ambitieux que le projet, je traduis vos idées en code.</span>
+                        </h1>
+                        <p>En relation toxique avec VSCode, étudiant en 2ème année de développement multimédia.</p>
+                    </div>
+                    <div id="buttons">
+                        <a href="assets/img/CV - Victor LE CLAIRE.jpg" class="primary-button button" download
+                            aria-label="Télécharger mon CV">
+                            Télécharger CV
+                            <img src="assets/img/dl-icon.svg" alt="" aria-hidden="true">
+                        </a>
+                        <a href="#contact" class="secondary-button button">Me contacter</a>
+                    </div>
+                </div>
+                <aside id="hero_content_pfp" aria-label="Informations visuelles">
+                    <article class="pfp_card card-1">
+                        <div class="card-img">
+                            <img src="assets/img/code-tag.svg" alt="">
+                        </div>
+                        <div class="card-texts">
+                            <h3>Programmation web</h3>
+                            <p>Front-end et back-end</p>
+                        </div>
+                    </article>
+                    <article class="pfp_card card-2">
+                        <div class="card-img">
+                            <img src="assets/img/english-flag.svg" alt="">
+                        </div>
+                        <div class="card-texts">
+                            <h3>B2 English skills</h3>
+                            <p>Comunication pro et fluide</p>
+                        </div>
+                    </article>
+                    <article class="pfp_card card-3">
+                        <div class="card-img">
+                            <img src="assets/img/opquast-icon.svg" alt="">
+                        </div>
+                        <div class="card-texts">
+                            <h3>Validation Opquast</h3>
+                            <p>Certificat d'UX/UI en bagage</p>
+                        </div>
+                    </article>
+                    <figure id="pfp_container">
+                        <img src="assets/img/pfp-img.jpg" alt="Photo de profil de Victor LE CLAIRE" id="pfp_image">
+                    </figure>
+                    <div id="pfp-background-spin" aria-hidden="true">
+                        <img src="assets/img/pfp-spin-background.svg" alt="">
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="works" aria-labelledby="works-title">
+            <header id="works_header">
+                <h2 id="works-title">Projets</h2>
+                <div id="works_filter">
+                    <img src="assets/img/works_down-arrow-filter.svg" alt="" aria-hidden="true">
+                    <span>Plus récent</span>
+                </div>
+            </header>
+            <div id="works_list">
+                <hr aria-hidden="true">
+                <article class="project-card">
+                    <a href="https://restau-re.fr" target="_blank">
+                        <div class="project-card-left">
+                            <header class="project-card-left-texts">
+                                <h3>Restau'Ré</h3>
+                                <p>"Le label qui garantit une note juste." Un projet de groupe universitaire consistant en un site web de restauration. J'ai travaillé sur la partie front-end.</p>
+                            </header>
+                            <ul class="project-card-left-tags" aria-label="Technologies utilisées">
+                                <li class="project-card-left-tag">HTML</li>
+                                <li class="project-card-left-tag">CSS</li>
+                                <li class="project-card-left-tag">JavaScript</li>
+                                <li class="project-card-left-tag">PHP</li>
+                            </ul>
+                            <time class="project-card-left-release-date" datetime="2026-01">01/2026</time>
+                        </div>
+                        <a href="#" class="project-card-right" aria-label="Voir le projet">
+                            <img src="assets/img/project-link-icon.svg" alt="" aria-hidden="true">
+                        </a>
+                    </a>
+                </article>
+                <hr aria-hidden="true">
+                <article class="project-card">
+                    <a href="https://chalinger.github.io/SA-3.03---Projet-DataViz/" target="_blank">
+                        <div class="project-card-left">
+                            <header class="project-card-left-texts">
+                                <h3>ClimEvo - Projet DataViz</h3>
+                                <p>ClimEvo est un projet de groupe universitaire consistant en un site web de visualisation de données climatiques. J'ai travaillé sur la partie front-end.</p>
+                            </header>
+                            <ul class="project-card-left-tags" aria-label="Technologies utilisées">
+                                <li class="project-card-left-tag">HTML</li>
+                                <li class="project-card-left-tag">CSS</li>
+                                <li class="project-card-left-tag">JavaScript</li>
+                            </ul>
+                            <time class="project-card-left-release-date" datetime="2025-11">11/2025</time>
+                        </div>
+                        <a href="#" class="project-card-right" aria-label="Voir le projet">
+                            <img src="assets/img/project-link-icon.svg" alt="" aria-hidden="true">
+                        </a>
+                    </a>
+                </article>
+                <hr aria-hidden="true">
+                <article class="project-card">
+                    <a href="https://www.youtube.com/@ptmcliver" target="_blank">
+                        <div class="project-card-left">
+                            <header class="project-card-left-texts">
+                                <h3>PTMC - Chaîne YouTube</h3>
+                                <p>Montage et Management de la chaîne YouTube de PTMC du streamer états uniens BTMC.</p>
+                            </header>
+                            <ul class="project-card-left-tags" aria-label="Technologies utilisées">
+                                <li class="project-card-left-tag">Montage</li>
+                            </ul>
+                            <time class="project-card-left-release-date" datetime="2025-02">02/2025</time>
+                        </div>
+                        <a href="#" class="project-card-right" aria-label="Voir le projet">
+                            <img src="assets/img/project-link-icon.svg" alt="" aria-hidden="true">
+                        </a>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="about" aria-labelledby="about-title">
+            <article id="about-main">
+                <header id="about_header">
+                    <h2 id="about-title">Qui suis-<span>je</span></h2>
+                </header>
+                <div id="about_motivation-tag" role="status">
+                    <img src="assets/img/motivation-tag-icon.svg" alt="" aria-hidden="true">
+                    <p>Motivé par la passion</p>
+                </div>
+                <div id="about_content">
+                    <div id="about_content-text">
+                        <p>Je travaille par <strong class="span-primary-color">passion</strong> et envie de rendre
+                            service.
+                            Je cherche à me rendre utile en toute circonstance, et suis parfois trop curieux selon les
+                            contextes/projets, mais cela ne m'empêche pas de livrer des rendus
+                            <strong>satisfaisants</strong> et <strong>proactifs</strong>.
+                        </p>
+                        <p>Je suis à la recherche de <strong class="span-primary-color">challenges</strong> dans des
+                            projets
+                            <em>ambitieux</em> et <em>organisés</em>.
+                            Mes projets de groupe et expériences en entreprise m'ont permis d'acquérir la
+                            <strong>rigueur</strong>,
+                            l'<strong>esprit d'équipe</strong>, le <strong>respect des deadlines</strong> - des qualités
+                            essentielles dans une équipe.
+                        </p>
+                        <p>Mon but à long terme est d'acquérir assez d'expérience et de compétences afin de créer
+                            <strong>mon propre jeu vidéo</strong>. Ces derniers et la programmation sont implicitement
+                            liés,
+                            et c'est la raison pour laquelle ce sont mes <strong>2 plus grands passe-temps</strong> (en
+                            dehors des <em>animes</em>, les <em>mangas</em>, et le <em>volley-ball</em>).
+                        </p>
+                    </div>
+                    <figure id="about_img-container">
+                        <img src="assets/img/about-big-img.jpg" alt="Illustration à propos de moi">
+                    </figure>
+                </div>
+            </article>
+
+            <!-- Compétences -->
+            <article id="about_skills" aria-labelledby="skills-title">
+                <header id="about_skills_header">
+                    <h3 id="skills-title">Mes <span class="span-primary-color">compétences</span></h3>
+                    <p>Les outils qui m'aident à façonner vos idées.</p>
+                </header>
+                <div id="about_skills_container">
+                    <article class="about_skills_card">
+                        <div class="about_skills_card_svg-container" aria-hidden="true">
+                            <img src="assets/img/code-icon.svg" alt="">
+                        </div>
+                        <div class="about_skills_card_texts">
+                            <h4>HTML</h4>
+                            <p>Toutes les bases sont acquises, en plus d'une utilisation régulière afin d'approfondir
+                                mes connaissances chaque jour.</p>
+                        </div>
+                    </article>
+                    <article class="about_skills_card">
+                        <div class="about_skills_card_svg-container" aria-hidden="true">
+                            <img src="assets/img/code-icon.svg" alt="">
+                        </div>
+                        <div class="about_skills_card_texts">
+                            <h4>CSS</h4>
+                            <p>Le CSS est l'un de mes grands points forts. J'aime chercher des solutions de
+                                développement web et notamment la personnalisation des éléments.</p>
+                        </div>
+                    </article>
+                    <article class="about_skills_card">
+                        <div class="about_skills_card_svg-container" aria-hidden="true">
+                            <img src="assets/img/code-icon.svg" alt="">
+                        </div>
+                        <div class="about_skills_card_texts">
+                            <h4>JavaScript</h4>
+                            <p>Ce langage aide à l'interactivité des éléments d'un site, et comme pour le CSS, chercher
+                                des solutions est tout aussi passionnant.</p>
+                        </div>
+                    </article>
+                    <article class="about_skills_card">
+                        <div class="about_skills_card_svg-container" aria-hidden="true">
+                            <img src="assets/img/code-icon.svg" alt="">
+                        </div>
+                        <div class="about_skills_card_texts">
+                            <h4>PHP/SQL</h4>
+                            <p>La gestion de bases de données et la sécurité web sont des points essentiels pour un bon
+                                développeur, c'est pourquoi je suis aussi spécialisé dans l'application de ces langages
+                                dans des projets complexes.</p>
+                        </div>
+                    </article>
+                </div>
+            </article>
+
+            <!-- Expérience -->
+            <!-- Expérience -->
+            <article id="about_experience" aria-labelledby="experience-title">
+                <header id="about_experience_header">
+                    <h3 id="experience-title">Mon <span class="span-primary-color">parcours</span></h3>
+                    <p>Une adolescence programmée et évolutive, telle une vraie IA.</p>
+                </header>
+
+                <div id="about_experience_timeline-wrapper">
+                    <!-- Ligne horizontale de base -->
+                    <div class="timeline-line-base"></div>
+
+                    <!-- Ligne de progression -->
+                    <div class="timeline-line-progress"></div>
+
+                    <!-- Container avec scroll -->
+                    <div id="about_experience_main-container">
+
+                        <!-- Item 1 - Current -->
+                        <div class="about_experience_timeline-card active">
+                            <div class="timeline-dot">
+                                <div class="dot-pulse"></div>
+                                <div class="dot-inner"></div>
+                            </div>
+                            <div class="timeline-connector"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-badge">
+                                    <div class="badge-dot"></div>
+                                    <span>2022</span>
+                                </div>
+                                <h4>Stage chez Clardian (Ubaq)</h4>
+                                <p class="timeline-company">Entreprise de création de logiciels</p>
+                                <div class="timeline-location">
+                                    <span>Paris, FR</span>
+                                    <span class="timeline-period">Mai 2022</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="about_experience_timeline-card">
+                            <div class="timeline-dot">
+                                <div class="dot-inner"></div>
+                            </div>
+                            <div class="timeline-connector"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-badge">
+                                    <div class="badge-dot"></div>
+                                    <span>2024</span>
+                                </div>
+                                <h4>Baccalauréat technologique (STI2D - SIN)</h4>
+                                <p class="timeline-company">Systèmes d'Information et Numérique</p>
+                                <div class="timeline-location">
+                                    <span>Paris, FR</span>
+                                    <span class="timeline-period">2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="about_experience_timeline-card">
+                            <div class="timeline-dot">
+                                <div class="dot-inner"></div>
+                            </div>
+                            <div class="timeline-connector"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-badge">
+                                    <div class="badge-dot"></div>
+                                    <span>2024</span>
+                                </div>
+                                <h4>Réalisation de multiples projets web universitaires</h4>
+                                <p class="timeline-company">Projets visible ci-dessus ou sur mon Github</p>
+                                <div class="timeline-location">
+                                    <span>Paris, FR</span>
+                                    <span class="timeline-period">Depuis 2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="about_experience_timeline-card">
+                            <div class="timeline-dot">
+                                <div class="dot-inner"></div>
+                            </div>
+                            <div class="timeline-connector"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-badge">
+                                    <div class="badge-dot"></div>
+                                    <span>2025</span>
+                                </div>
+                                <h4>Montage et Management de chaîne Youtube</h4>
+                                <p class="timeline-company">Pour le streamer BTMC aux États-Unis</p>
+                                <div class="timeline-location">
+                                    <span>Paris, FR</span>
+                                    <span class="timeline-period">Fevrier 2025</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 - Education -->
+                        <div class="about_experience_timeline-card education">
+                            <div class="timeline-dot">
+                                <div class="dot-inner"></div>
+                            </div>
+                            <div class="timeline-connector"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-badge">
+                                    <div class="badge-dot"></div>
+                                    <span>2026</span>
+                                </div>
+                                <h4>Recherche d'un stage de 2 mois dans le domaine du multimédia</h4>
+                                <p class="timeline-company">Chez vous, je l'espère</p>
+                                <div class="timeline-location">
+                                    <span>Paris, FR</span>
+                                    <span class="timeline-period">Avril à Juin 2026</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Gradients de fade -->
+                    <div class="timeline-fade-left"></div>
+                    <div class="timeline-fade-right"></div>
+                </div>
+
+                <!-- Indicateur de scroll -->
+                <div class="timeline-scroll-indicator">
+                    <p>
+                        <span class="arrow-down">↓</span>
+                        Scroll pour explorer
+                        <span class="arrow-down">↓</span>
+                    </p>
+                    <div class="timeline-progress-container">
+                        <div class="timeline-progress-bar">
+                            <div class="timeline-progress-fill"></div>
+                        </div>
+                        <p class="timeline-progress-text">0% exploré</p>
+                    </div>
+                </div>
+        </section>
+        </article>
+        </section>
+
+        <!-- Section Témoignages -->
+        <section id="testimonials" aria-labelledby="testimonials-title">
+            <header id="testimonials_header">
+                <h2 id="testimonials-title"><span class="span-primary-color">Témoignages</span></h2>
+                <p>Voici comment les gens me voient au quotidien.</p>
+            </header>
+            <div id="testimonials_main-container">
+                <article class="testimonials_card">
+                    <div class="star-n-quote">
+                        <img src="assets/img/quote-icon.svg" alt="" aria-hidden="true" class="quote">
+                    </div>
+                    <blockquote class="testimonials_card_text">
+                        <p>Victor est un garçon curieux et motivé. Il a beaucoup de plaisir à travailler en équipe et à
+                            approfondir ses connaissances dans le domaine de l'informatique. Il reste impliqué et motivé
+                            en toute circonstance.</p>
+                    </blockquote>
+                    <footer class="testimonials_card_author">
+                        <cite>
+                            <strong>Isabelle Spitzmuller</strong>
+                            <span>DRH - Ubaq</span>
+                        </cite>
+                    </footer>
+                </article>
+                <article class="testimonials_card">
+                    <div class="star-n-quote">
+                        <img src="assets/img/quote-icon.svg" alt="" aria-hidden="true" class="quote">
+                    </div>
+                    <blockquote class="testimonials_card_text">
+                        <p>Victor est une personne très empathique et toujours disponible pour aider. Il a des
+                            facilités. Pour communiquer avec la clientèle et cherche toujours à faire quelque chose car
+                            il ne sait pas rester en place.</p>
+                    </blockquote>
+                    <footer class="testimonials_card_author">
+                        <cite>
+                            <strong>Alain Raulet</strong>
+                            <span>Opticien, Entrepreneur</span>
+                        </cite>
+                    </footer>
+                </article>
+                <article class="testimonials_card">
+                    <div class="star-n-quote">
+                        <img src="assets/img/quote-icon.svg" alt="" aria-hidden="true" class="quote">
+                    </div>
+                    <blockquote class="testimonials_card_text">
+                        <p>J'ai eu l'occasion d'être un camarade de Victor et de travailler avec lui sur plusieurs
+                            projets. C'est une personne qui cherche souvent où se mettre pour être le plus utile, mais
+                            cela peut lui causer du tort. Il a donc besoin d'être encadré
+                            et qu'on lui dise quoi faire afin qu'il puisse s'exprimer pleinement.</p>
+                    </blockquote>
+                    <footer class="testimonials_card_author">
+                        <cite>
+                            <strong>Raphael DA COSTA</strong>
+                            <span>Etudiant en cybersecurite</span>
+                        </cite>
+                    </footer>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" aria-labelledby="contact-title">
+            <header id="contact-header">
+                <h2 id="contact-title"><span class="span-primary-color">Contactez-</span>moi</h2>
+                <p>Je suis disposé à répondre à toutes vos questions, n'hésitez plus.</p>
+            </header>
+            <div id="contact-main-container">
+                <form action="#" method="post" novalidate>
+                    <div class="form-area">
+                        <label for="mail">Votre e-mail <span aria-label="requis">*</span></label>
+                        <input type="email" placeholder="exemple@domaine.com" id="mail" name="mail" required
+                            aria-required="true">
+                    </div>
+
+                    <div class="form-area">
+                        <label for="object">Objet <span aria-label="requis">*</span></label>
+                        <input type="text" placeholder="Veuillez saisir un objet..." id="object" name="object" required
+                            aria-required="true">
+                    </div>
+
+                    <div class="form-area">
+                        <label for="content">Message <span aria-label="requis">*</span></label>
+                        <textarea id="content" name="content" placeholder="Je vous contacte pour..." required
+                            aria-required="true"></textarea>
+                    </div>
+
+                    <div class="form-submit-container">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+                <div id="contact-infos">
+                    <div id="get-in-touch" class="contact-infos-cat">
+                        <p>PRENDRE CONTACT</p>
+                        <div id="get-in-touch-container">
+                            <div id="get-in-touch-email">
+                                <a href="mailto:victor.le.claire@icloud.com">victor.le.claire@icloud.com</a>
+                            </div>
+                            <div id="get-in-touch-phone">
+                                <img src="assets/img/phone-icon.svg" alt="" aria-hidden="true">
+                                <a href="tel:+330783453732">(+33) 07 83 45 37 32</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="socials" class="contact-infos-cat">
+                        <p>SUIVEZ-MOI</p>
+                        <div id="socials-container">
+                            <a href="https://github.com/Chalinger" target="_blank" class="socials-link">
+                                <img src="assets/img/github-icon.svg" alt="Logo Github" aria-hidden="true">
+                            </a>
+                            <a href="https://www.linkedin.com/in/victor-le-claire-95a5872ba/" target="_blank"
+                                class="socials-link">
+                                <img src="assets/img/linkedin-icon.svg" alt="Logo Linkedin" aria-hidden="true">
+                            </a>
+                        </div>
+                    </div>
+        </section>
+    </main>
+    <hr id="footer-separator" aria-hidden="true">
+    <footer id="body-footer">
+        <p>Fait avec passion, en France.</p>
+        <p>© 2025 Victor - Tous droits reservés</p>
+        <a href="">Mentions légales</a>
+    </footer>
+
+
+    <script src="cursor-trail.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
