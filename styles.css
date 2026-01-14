@@ -174,7 +174,6 @@ em {
     overflow: hidden;
     pointer-events: none;
     z-index: 1000;
-    border: red solid 1px;
 }
 
 #fixed_nav {
